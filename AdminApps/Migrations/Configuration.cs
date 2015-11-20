@@ -26,7 +26,8 @@ namespace AdminApps.Migrations
             // 2014-11-19: Initialize NEBS testing values, starting at the top of the dependency hierarchy. These values are meant for development purposes; 
             // they will be replaced by populated values from NEBS DB using functions in NebsConcurrencyController.
             context.BudgetPeriods.AddOrUpdate(i => i.ID,
-                    new BudgetPeriod { ID = 7, Description = "2015-2017 Biennium (FY16-17)", ActualYear = "2014", WorkProgramYear = "2015", BeginYear = "2016", EndYear = "2017" }
+                    new BudgetPeriod { ID = 7, Description = "2015-2017 Biennium (FY16-17)", ActualYear = "2014", WorkProgramYear = "2015", BeginYear = "2016", EndYear = "2017" },
+                    new BudgetPeriod { ID = 7, Description = "2017-2019 Biennium (FY18-19)", ActualYear = "2016", WorkProgramYear = "2017", BeginYear = "2018", EndYear = "2019" }
                 );
 
             context.BudgetSessions.AddOrUpdate(i => i.ID,
